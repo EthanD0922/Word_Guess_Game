@@ -2,10 +2,10 @@
 <head>
 
     <title>Stranger Things</title>
+     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>   
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="javascript" href="assets/javascript/game.js">
+    <script rel="text/javascript" src="assets/javascript/game.js"></script>
    
 </head>
 <body>
@@ -30,7 +30,8 @@
         <div class=" col-lg-8 border p-4 text-center">
             <p>Successful contacts:</p>
             <p>Next to call:</p>
-            <p>_ _ _ _ _ _ _ </p>
+            <div id="character"> </div>
+            <div id="drink-options"></div>
             <p>Attempts left:</p>
             <p>Letters Guessed:</p>
         </div>
@@ -39,3 +40,30 @@
 
 
 </body>
+<!-- <script>
+    // var characters = document.getElementById("character")
+    // for (i=0; i< activeQuestion.length + 1; i++){
+    //     var blanks = document.createElement("div");
+    //     blanks.textContent = questions[i];
+    //     characters.appendChild(blanks);
+    // }
+    var drinkList = [
+        "Coffee: $5",
+        "Espresso: $7",
+        "Cappuccino: $6",
+        "Latte: $4",
+        "Tea: $3",
+        "Ice Coffee: $6",
+        "Ice Espresso: $8",
+        "Ice Latte: $6",
+        "Ice Tea: $4"
+    ];
+    // 1. Create code that "grabs" the div with the matching id (#drink-options);
+    // ...
+    var targetDiv = document.getElementById("drink-options")
+    for (var i = 0; i < drinkList.length; i++) {
+        var babyDiv = document.createElement("div");
+        babyDiv.textContent = drinkList[i];
+        targetDiv.appendChild(babyDiv);
+    }
+</script> -->
