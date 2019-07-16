@@ -5,7 +5,7 @@
      
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script rel="text/javascript" src="assets/javascript/game.js"></script>
+    
    
 </head>
 <body>
@@ -16,6 +16,7 @@
         <div class="container text-center">
             <h1 class="display-4">Stranger Things Word Guess</h1>
             <p class="lead">Quick! The Mind Flayer is attacking Hawkins! Get on the Cerebro and call the gang!</p>
+            <p class="lead"> Press any letter to start.</p>
         </div>
     </div>
     
@@ -28,42 +29,17 @@
         </div>
       
         <div class=" col-lg-8 border p-4 text-center">
-            <p>Successful contacts:</p>
-            <p>Next to call:</p>
-            <div id="character"> </div>
-            <div id="drink-options"></div>
+            <p >Successful contacts:</p>
+            <p id="winsCount"></p>
+            <p>Cerebro to...:</p>
+            <div id="character" class="row justify-content-center text-center"></div>
             <p>Attempts left:</p>
+            <p id="fails"></p>
             <p>Letters Guessed:</p>
+            <p id="guesses"></p>
         </div>
     </div>
 </div>
 
-
+<script rel="text/javascript" src="assets/javascript/game.js"></script>
 </body>
-<!-- <script>
-    // var characters = document.getElementById("character")
-    // for (i=0; i< activeQuestion.length + 1; i++){
-    //     var blanks = document.createElement("div");
-    //     blanks.textContent = questions[i];
-    //     characters.appendChild(blanks);
-    // }
-    var drinkList = [
-        "Coffee: $5",
-        "Espresso: $7",
-        "Cappuccino: $6",
-        "Latte: $4",
-        "Tea: $3",
-        "Ice Coffee: $6",
-        "Ice Espresso: $8",
-        "Ice Latte: $6",
-        "Ice Tea: $4"
-    ];
-    // 1. Create code that "grabs" the div with the matching id (#drink-options);
-    // ...
-    var targetDiv = document.getElementById("drink-options")
-    for (var i = 0; i < drinkList.length; i++) {
-        var babyDiv = document.createElement("div");
-        babyDiv.textContent = drinkList[i];
-        targetDiv.appendChild(babyDiv);
-    }
-</script> -->
