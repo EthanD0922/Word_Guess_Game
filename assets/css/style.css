@@ -1,0 +1,16 @@
+body {
+    background-color: black;
+    font-family: 'Quicksand', sans-serif;
+    background-image: image("assets\images\ST_logo.jpg"); 
+    background-image: (assets\images\ST_logo.jpg);
+}
+.container{
+    background-color:;
+}
+#jumbo{
+    background-color: rgb(197, 0, 0)
+}
+
+.content{
+    background-color: rgb(129, 129, 129)
+}

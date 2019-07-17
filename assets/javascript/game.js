@@ -14,7 +14,6 @@ var questions =[
     "jonathan",  
 ];
 
-
 var wins = "0"
 
 var x = 0
@@ -36,6 +35,7 @@ var userGuessed = [
 var attemptsLeft = 10
 document.querySelector("#winsCount").textContent = wins;
 document.querySelector("#fails").textContent = attemptsLeft;
+
 
 var activeQuestion = questions[x]
 var wordArray = activeQuestion.split("")
